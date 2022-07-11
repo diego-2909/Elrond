@@ -46,3 +46,8 @@ h1 {
 .presse>ul>li {
     padding: 15px 23px 15px 23px;
 }
+
+.presse {
+    box-shadow: 50px -10px 90px 50px black;
+    position: relative;
+}

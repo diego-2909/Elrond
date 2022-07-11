@@ -1,0 +1,126 @@
+.cadres {
+    background-color: rgb(248, 249, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.phrase-cadres {
+    width: 720px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: white;
+}
+
+.bloc-cadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 659px;
+    width: 720px;
+}
+
+.cadre {
+    height: 611px;
+    width: 100%;
+
+}
+
+.petitcadre {
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    box-shadow: 3px 15px 30px -31px grey;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trait-cadre {
+    background-color: #e0e1e5;
+    width: 3rem;
+    height: 2px;
+    margin: 0 auto 1rem auto !important;
+}
+
+
+
+.contenu {
+    position: relative;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contenu>* {
+    margin: 10px 40px 30px 40px;
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 24px -17px black;
+}
+
+.bouton-cadre {
+    display: flex;
+    border: 1px solid #1B46C2;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #1B46C2;
+    font-weight: bold;
+}
+
+#cadre1:hover #titre1 {
+    color: #1B46C2;
+    transition: 0.7s;
+}
+
+#cadre1:hover #trait1 {
+    background-color: #1B46C2;
+    transition: 0.7s;
+}
+
+#cadre1:hover #bouton1 {
+    background-color: #1B46C2;
+    color: white;
+    transition: 0.7s;
+}
+
+#cadre2:hover #titre2 {
+    color: #1B46C2;
+    transition: 0.7s;
+}
+
+#cadre2:hover #trait2 {
+    background-color: #1B46C2;
+    transition: 0.7s;
+}
+
+#cadre2:hover #bouton2 {
+    background-color: #1B46C2;
+    color: white;
+    transition: 0.7s;
+}
+
+#bouton1 {
+    margin-top: 50px;
+}
