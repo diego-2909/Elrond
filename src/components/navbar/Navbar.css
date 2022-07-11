@@ -1,0 +1,69 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar-left {
+    margin-left: 15%;
+    width: 120px;
+    height: 40px;
+}
+
+.logo-elrond {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.navbar-right {
+    height: 40px;
+    margin-right: 5%;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-right>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-right>ul>li:nth-child(1),
+.navbar-right>ul>li:nth-child(2),
+.navbar-right>ul>li:nth-child(3) {
+    padding-right: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar-right>ul>li:nth-child(1):hover,
+.navbar-right>ul>li:nth-child(2):hover,
+.navbar-right>ul>li:nth-child(3):hover {
+    color: white;
+}
+
+
+.prix-egld {
+    color: black;
+    background-color: white;
+    padding-right: 0px;
+    list-style: none;
+    padding: 1px 6px 1px 6px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: flex;
+
+}
+
+.prix-egld:hover {
+    color: black;
+}
