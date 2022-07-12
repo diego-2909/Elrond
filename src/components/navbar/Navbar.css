@@ -8,6 +8,7 @@
     align-items: center;
     position: fixed;
     z-index: 2;
+    flex-wrap: nowrap;
 }
 
 .navbar-left {
@@ -30,6 +31,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .navbar-right>ul {

@@ -15,7 +15,7 @@ const Presentation = () => {
 
 
             <div className="image-presentation">
-                <img className="logo-world" src={world} alt="monde" />
+                <img className="logo-world" src={world} alt="monde" unselectable="on" />
                 <h1> Elrond Network</h1>
 
 

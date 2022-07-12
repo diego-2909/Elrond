@@ -8,6 +8,8 @@
 
 
 
+
+
 .image-presentation {
     width: 100%;
     display: flex;
@@ -15,6 +17,8 @@
     height: 620px;
     align-items: flex-end;
     text-align: center;
+    pointer-events: none;
+    user-select: none;
 }
 
 h1 {
