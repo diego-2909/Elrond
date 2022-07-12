@@ -1,5 +1,7 @@
 .etiquettes {
     background-color: black;
+    margin-bottom: -1px;
+    margin-top: -1px;
 }
 
 .liste-cadres {
@@ -52,16 +54,57 @@
     .etiquette {
         color: white;
         padding: 20px 10px 20px 10px;
-        margin: 10px 30px;
+        margin: 10px 15px;
         background-color: #18191a;
-        width: 200px;
+        width: 350px;
         text-align: center;
 
     }
 
 }
 
-@media screen and (max-width: 460px) {
+
+
+
+
+@media screen and (max-width: 741px) {
+    .liste-cadres {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .etiquette {
+        color: white;
+        padding: 20px 10px 20px 10px;
+        margin: 10px 15px;
+        background-color: #18191a;
+        width: 300px;
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .liste-cadres {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .etiquette {
+        color: white;
+        padding: 20px 10px 20px 10px;
+        margin: 10px 15px;
+        background-color: #18191a;
+        width: 250px;
+        text-align: center;
+
+    }
+
+}
+
+
+@media screen and (max-width: 538px) {
     .liste-cadres {
         flex-direction: column;
         align-items: center;
@@ -72,7 +115,7 @@
         padding: 20px 10px 20px 10px;
         margin: 10px 30px;
         background-color: #18191a;
-        width: 200px;
+        width: 80vw;
         text-align: center;
 
 

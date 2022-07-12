@@ -53,3 +53,45 @@
 .pourcentage>h5 {
     color: white;
 }
+
+.left-price {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.right-price {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+@media screen and (max-width:526px) {
+
+
+
+    .left-price {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .right-price {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .liste_price_change {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .bouton_price {
+        width: 35vw;
+    }
+
+}

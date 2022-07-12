@@ -16,10 +16,7 @@ const PriceChange = () => {
     let pricechange7j = parseFloat(data.price_change_percentage_7d_in_currency).toFixed(2);
     let pricechange30j = parseFloat(data.price_change_percentage_30d_in_currency).toFixed(2);
     let pricechange1y = parseFloat(data.price_change_percentage_1y_in_currency).toFixed(2);
-    let total_supply = numberWithCommas(parseInt(data.total_supply));
-    function numberWithCommas(x) {
-        return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, " ");
-    }
+    let total_supply = parseInt(data.total_supply);
 
 
 
@@ -39,44 +36,60 @@ const PriceChange = () => {
 
             <div className="liste_price_change">
 
-                <div className="bouton_price" style={isPositif(pricechange24h) ? { background: "green " } : { background: "#ea3943" }}>
-                    <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
-                    <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
-                    <div className="pourcentage">
-                        <h5>{pricechange24h}%</h5>
-                        <p>24h</p>
+                <div className="left-price">
+
+                    <div className="bouton_price" style={isPositif(pricechange24h) ? { background: "green " } : { background: "#ea3943" }}>
+                        <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
+                        <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
+                        <div className="pourcentage">
+                            <h5>{pricechange24h}%</h5>
+                            <p>24h</p>
+                        </div>
+
+                    </div>
+                    <div className="bouton_price" style={isPositif(pricechange7j) ? { background: "green " } : { background: "#ea3943" }}>
+                        <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
+                        <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
+                        <div className="pourcentage">
+                            <h5>{pricechange7j}%</h5>
+                            <p>7j</p>
+                        </div>
+
                     </div>
 
-                </div>
-                <div className="bouton_price" style={isPositif(pricechange7j) ? { background: "green " } : { background: "#ea3943" }}>
-                    <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
-                    <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
-                    <div className="pourcentage">
-                        <h5>{pricechange7j}%</h5>
-                        <p>7j</p>
-                    </div>
-
-                </div>
-                <div className="bouton_price" style={isPositif(pricechange30j) ? { background: "green " } : { background: "#ea3943" }}>
-                    <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
-                    <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
-                    <div className="pourcentage">
-                        <h5>{pricechange30j}%</h5>
-                        <p>30j</p>
-                    </div>
 
                 </div>
 
+                <div className="right-price">
 
-                <div className="bouton_price" style={isPositif(pricechange1y) ? { background: "green " } : { background: "#ea3943" }}>
-                    <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
-                    <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
-                    <div className="pourcentage">
-                        <h5>{pricechange1y}%</h5>
-                        <p>1y</p>
+                    <div className="bouton_price" style={isPositif(pricechange30j) ? { background: "green " } : { background: "#ea3943" }}>
+                        <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
+                        <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
+                        <div className="pourcentage">
+                            <h5>{pricechange30j}%</h5>
+                            <p>30j</p>
+                        </div>
+
                     </div>
 
+
+                    <div className="bouton_price" style={isPositif(pricechange1y) ? { background: "green " } : { background: "#ea3943" }}>
+                        <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
+                        <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
+                        <div className="pourcentage">
+                            <h5>{pricechange1y}%</h5>
+                            <p>1y</p>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
+
+
+
+
 
 
             </div>

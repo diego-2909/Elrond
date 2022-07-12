@@ -64,8 +64,56 @@
     border: 1px solid grey;
     display: flex;
 
+
 }
 
 .prix-egld:hover {
     color: black;
+}
+
+.burger-menu {
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+
+
+
+}
+
+.burger-bar {
+    width: 2em;
+    height: 0.2em;
+    background-color: white;
+    border-radius: 0.5em;
+    margin-top: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+@media screen and (min-width : 913px) {
+
+    .burger-menu {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width : 912px) {
+    .navbar-right {
+        display: none;
+    }
 }

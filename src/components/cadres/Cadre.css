@@ -10,7 +10,7 @@
 
 
 .phrase-cadres {
-    width: 720px;
+    width: 80%;
     padding: 20px;
     margin-top: 40px;
     background-color: white;
@@ -27,7 +27,7 @@
 }
 
 .cadre {
-    height: 611px;
+
     width: 100%;
 
 }
@@ -149,4 +149,15 @@
 
 #bouton1 {
     margin-top: 50px;
+}
+
+@media screen and (max-width:700px) {
+    .bloc-cadre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+        width: 80%;
+    }
+
 }
