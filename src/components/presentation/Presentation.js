@@ -12,16 +12,20 @@ import Yahoo from "../../media/YahooFinance.svg"
 const Presentation = () => {
     return (
         <div className='presentation'>
-            <h1> Elrond Network</h1>
+
+
             <div className="image-presentation">
                 <img className="logo-world" src={world} alt="monde" />
+                <h1> Elrond Network</h1>
+
 
             </div>
 
-            <div className="presse">
 
+
+            <div className="presse">
                 <ul>
-                    <li><img className="image-presse" src={Inc} alt="inc logo" fill="grey"></img></li>
+                    <li><img className="image-presse" src={Inc} alt="inc logo" ></img></li>
                     <li><img className="image-presse" src={forbes} alt="forbes logo"></img></li>
                     <li><img className="image-presse" src={Bloomberg} alt="Bloomberg logo"></img></li>
                     <li><img className="image-presse" src={Lebloc} alt="lebloc logo"></img></li>

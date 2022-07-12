@@ -3,7 +3,10 @@
     background-color: black;
     overflow-x: hidden;
 
+
 }
+
+
 
 .image-presentation {
     width: 100%;
@@ -11,13 +14,15 @@
     justify-content: center;
     height: 620px;
     align-items: flex-end;
+    text-align: center;
 }
 
 h1 {
     color: white;
     position: absolute;
     font-size: 50px;
-    top: 50%;
+    width: 100%;
+    top: 310px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

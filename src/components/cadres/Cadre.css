@@ -8,13 +8,14 @@
 
 }
 
+
 .phrase-cadres {
     width: 720px;
-    border: 1px solid black;
-    border-radius: 20px;
     padding: 20px;
     margin-top: 40px;
     background-color: white;
+    box-shadow: 0px 8px 7px -10px;
+
 }
 
 .bloc-cadre {
@@ -105,6 +106,18 @@
     transition: 0.7s;
 }
 
+#cadre1:hover #rond1 {
+
+    background: -moz-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: -webkit-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: -o-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: -ms-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    transition: 0.7s;
+
+}
+
+
 #cadre2:hover #titre2 {
     color: #1B46C2;
     transition: 0.7s;
@@ -120,6 +133,19 @@
     color: white;
     transition: 0.7s;
 }
+
+#cadre2:hover #rond2 {
+
+    background: -moz-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: -webkit-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: -o-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: -ms-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(241, 243, 254, 1) 58%, rgba(94, 113, 217, 1) 86%, rgba(27, 70, 194, 1) 100%);
+    transition: 0.7s;
+
+}
+
+
 
 #bouton1 {
     margin-top: 50px;

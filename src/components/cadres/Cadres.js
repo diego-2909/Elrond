@@ -15,7 +15,7 @@ const Cadres = () => {
 
                 <div className="cadre">
                     <div className="petitcadre" id="cadre1">
-                        <div className="rond">
+                        <div className="rond" id="rond1">
                             <img src={block} alt="block" />
                         </div>
                         <div className="contenu">
@@ -34,7 +34,7 @@ const Cadres = () => {
 
                 <div className="cadre">
                     <div className="petitcadre" id="cadre2">
-                        <div className="rond">
+                        <div className="rond" id="rond2">
                             <img src={shield} alt="shield" />
                         </div>
                         <div className="contenu">
