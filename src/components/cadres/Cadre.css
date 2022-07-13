@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8vh;
 
 }
 
@@ -79,6 +80,7 @@
     align-items: center;
     box-shadow: 0 5px 24px -17px black;
 }
+
 
 .bouton-cadre {
     display: flex;

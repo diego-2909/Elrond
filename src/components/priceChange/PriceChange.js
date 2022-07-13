@@ -39,8 +39,8 @@ const PriceChange = () => {
                 <div className="left-price">
 
                     <div className="bouton_price" style={isPositif(pricechange24h) ? { background: "green " } : { background: "#ea3943" }}>
-                        <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
-                        <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
+                        <div className="triangle-code" style={isPositif(pricechange24h) ? { display: 'none' } : {}}></div>
+                        <div className="triangle-code-up" style={isPositif(pricechange24h) ? {} : { display: 'none' }}></div>
                         <div className="pourcentage">
                             <h5>{pricechange24h}%</h5>
                             <p>24h</p>
@@ -48,8 +48,8 @@ const PriceChange = () => {
 
                     </div>
                     <div className="bouton_price" style={isPositif(pricechange7j) ? { background: "green " } : { background: "#ea3943" }}>
-                        <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
-                        <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
+                        <div className="triangle-code" style={isPositif(pricechange7j) ? { display: 'none' } : {}}></div>
+                        <div className="triangle-code-up" style={isPositif(pricechange7j) ? {} : { display: 'none' }}></div>
                         <div className="pourcentage">
                             <h5>{pricechange7j}%</h5>
                             <p>7j</p>
@@ -63,8 +63,8 @@ const PriceChange = () => {
                 <div className="right-price">
 
                     <div className="bouton_price" style={isPositif(pricechange30j) ? { background: "green " } : { background: "#ea3943" }}>
-                        <div className="triangle-code" style={isPositif(pricechange1y) ? { display: 'none' } : {}}></div>
-                        <div className="triangle-code-up" style={isPositif(pricechange1y) ? {} : { display: 'none' }}></div>
+                        <div className="triangle-code" style={isPositif(pricechange30j) ? { display: 'none' } : {}}></div>
+                        <div className="triangle-code-up" style={isPositif(pricechange30j) ? {} : { display: 'none' }}></div>
                         <div className="pourcentage">
                             <h5>{pricechange30j}%</h5>
                             <p>30j</p>

@@ -7,6 +7,7 @@ import Prix from './components/prix/Prix';
 import Cadres from './components/cadres/Cadres';
 import Etiquettes from './components/etiquettes/Etiquettes';
 import PriceChange from './components/priceChange/PriceChange';
+import MiniChart from './components/mini-chart/MiniChart';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Etiquettes />
       <PriceChange />
       <Cadres />
+
+      <MiniChart />
 
 
     </div>

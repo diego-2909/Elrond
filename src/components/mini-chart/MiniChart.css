@@ -1,0 +1,28 @@
+.cadre-graphique {}
+
+.cadres-graphique {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+
+}
+
+.minichart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6vw 0
+}
+
+.minichart>h2 {
+    margin-bottom: 3vh;
+}
+
+@media screen and (min-width:850px) {
+    .cadres-graphique {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+}
