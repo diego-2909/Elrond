@@ -16,7 +16,9 @@ const Cadres = () => {
                 <div className="cadre">
                     <div className="petitcadre" id="cadre1">
                         <div className="rond" id="rond1">
-                            <img src={block} alt="block" />
+                            <div className="bordure" id="bordure1"></div>
+                            <div className="bordure" id="bordure2"></div>
+                            <img id="image-sharding" src={block} alt="block" />
                         </div>
                         <div className="contenu">
                             <h4 className='titre-cadre' id="titre1">Adaptive State Sharding</h4>
@@ -35,7 +37,9 @@ const Cadres = () => {
                 <div className="cadre">
                     <div className="petitcadre" id="cadre2">
                         <div className="rond" id="rond2">
-                            <img src={shield} alt="shield" />
+                            <div className="bordure" id="bordure1"></div>
+                            <div className="bordure" id="bordure2"></div>
+                            <img id="image-pos" src={shield} alt="shield" />
                         </div>
                         <div className="contenu">
                             <h4 className='titre-cadre' id="titre2">Secure Proof of Stake</h4>

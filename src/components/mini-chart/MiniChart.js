@@ -47,7 +47,7 @@ const MiniChart = () => {
         labels: apiTemps,
         datasets: [
             {
-                label: "Prix de EGLD en $",
+                label: "1 EGLD (en $)",
                 data: apiData,
                 color: "#1B46C2",
                 backgroundColor: "#1B46C2",
