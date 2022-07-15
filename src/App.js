@@ -8,6 +8,7 @@ import Cadres from './components/cadres/Cadres';
 import Etiquettes from './components/etiquettes/Etiquettes';
 import PriceChange from './components/priceChange/PriceChange';
 import MiniChart from './components/mini-chart/MiniChart';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Cadres />
 
       <MiniChart />
+      <Footer />
 
 
     </div>

@@ -16,7 +16,8 @@ const Presentation = () => {
 
             <div className="image-presentation">
                 <img className="logo-world" src={world} alt="monde" unselectable="on" />
-                <h1> Elrond Network</h1>
+                <h1 className="titre-presentation"> Elrond Network</h1>
+                <p className='p-presentation'><br />( Site non officiel )</p>
 
 
             </div>
@@ -25,11 +26,11 @@ const Presentation = () => {
 
             <div className="presse">
                 <ul>
-                    <li><img className="image-presse" src={Inc} alt="inc logo" ></img></li>
-                    <li><img className="image-presse" src={forbes} alt="forbes logo"></img></li>
-                    <li><img className="image-presse" src={Bloomberg} alt="Bloomberg logo"></img></li>
-                    <li><img className="image-presse" src={Lebloc} alt="lebloc logo"></img></li>
-                    <li><img className="image-presse" src={Yahoo} alt="lebloc logo"></img></li>
+                    <li><img className="image-presse logo-margin" src={Inc} alt="inc logo" ></img></li>
+                    <li><img className="image-presse logo-margin" src={forbes} alt="forbes logo"></img></li>
+                    <li ><img className="image-presse " src={Bloomberg} alt="Bloomberg logo" ></img></li>
+                    <li><img className="image-presse logo-LeBloc" src={Lebloc} alt="lebloc logo"></img></li>
+                    <li><img className="image-presse logo-Yahoo" src={Yahoo} alt="lebloc logo"></img></li>
 
 
 
@@ -40,7 +41,7 @@ const Presentation = () => {
 
 
 
-        </div>
+        </div >
     );
 };
 

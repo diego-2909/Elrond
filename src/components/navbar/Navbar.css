@@ -42,7 +42,7 @@
 .navbar-right>ul>li:nth-child(1),
 .navbar-right>ul>li:nth-child(2),
 .navbar-right>ul>li:nth-child(3) {
-    padding-right: 20px;
+    margin-right: 20px;
     list-style: none;
     cursor: pointer;
 }
@@ -55,21 +55,17 @@
 
 
 .prix-egld {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #1B46C2;
     padding-right: 0px;
     list-style: none;
-    padding: 1px 6px 1px 6px;
-    border-radius: 10px;
-    border: 1px solid grey;
+    padding: 2px 8px 2px 8px;
+    border-radius: 5px;
+
     display: flex;
-
-
 }
 
-.prix-egld:hover {
-    color: black;
-}
+
 
 .burger-menu {
     width: 4em;
@@ -116,4 +112,28 @@
     .navbar-right {
         display: none;
     }
+}
+
+.link {
+    position: relative;
+    cursor: pointer;
+}
+
+.link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #fff;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+.link:hover:after {
+    width: 100%;
+    left: 0;
+    background: #fff;
 }

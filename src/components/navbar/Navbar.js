@@ -33,9 +33,9 @@ const Navbar = () => {
 
             <div className='navbar-right'>
                 <ul>
-                    <li> Qu'est ce que EGLD ?</li>
-                    <li> Chart </li>
-                    <li> Site Officiel</li>
+                    <li className='link'> Qu'est ce que EGLD ?</li>
+                    <li className='link'> Chart </li>
+                    <li className='link'> Site Officiel</li>
                     <li className='prix-egld'>EGLD &nbsp;<Prix /> </li>
 
 
