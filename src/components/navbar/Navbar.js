@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Navbar.css";
 import photo from "../../media/elrond_logo.png";
 import Prix from '../prix/Prix';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
@@ -27,15 +28,15 @@ const Navbar = () => {
         <div className='navbar'>
 
             <div className="navbar-left">
-                <img className="logo-elrond" src={photo} alt="logo_elrond" />
+                <Link to="/"><img className="logo-elrond" src={photo} alt="logo_elrond" /></Link>
 
             </div>
 
             <div className='navbar-right'>
                 <ul>
-                    <li className='link'> Qu'est ce que EGLD ?</li>
-                    <li className='link'> Chart </li>
-                    <li className='link'> Site Officiel</li>
+                    <li className='link'> <Link to="/EGLD" className='lien'>Qu'est ce que EGLD ?</Link></li>
+                    <li className='link'> <Link to="/Charts" className='lien'>Chart</Link></li>
+                    <li className='link lien'><a href='https://elrond.com/' className='lien'>Site Officiel</a></li>
                     <li className='prix-egld'>EGLD &nbsp;<Prix /> </li>
 
 
@@ -48,6 +49,10 @@ const Navbar = () => {
                 <div className={burger_class}></div>
                 <div className={burger_class}></div>
                 <div className={burger_class}></div>
+            </div>
+
+            <div className={menu_class}>
+
             </div>
 
 

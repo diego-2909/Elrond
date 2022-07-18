@@ -39,19 +39,19 @@
     flex-direction: row;
 }
 
-.navbar-right>ul>li:nth-child(1),
-.navbar-right>ul>li:nth-child(2),
-.navbar-right>ul>li:nth-child(3) {
-    margin-right: 20px;
+.lien {
     list-style: none;
     cursor: pointer;
+    text-decoration: none;
+    color: grey;
+
 }
 
-.navbar-right>ul>li:nth-child(1):hover,
-.navbar-right>ul>li:nth-child(2):hover,
-.navbar-right>ul>li:nth-child(3):hover {
+.lien:hover {
     color: white;
+
 }
+
 
 
 .prix-egld {
@@ -87,15 +87,9 @@
     margin-top: 3px;
 }
 
-.hidden {
-    display: none;
-}
 
-.visible {
-    display: inherit;
-}
 
-@media screen and (min-width : 913px) {
+@media screen and (min-width : 729px) {
 
     .burger-menu {
         display: none;
@@ -108,7 +102,7 @@
 
 }
 
-@media screen and (max-width : 912px) {
+@media screen and (max-width : 728px) {
     .navbar-right {
         display: none;
     }
@@ -117,7 +111,13 @@
 .link {
     position: relative;
     cursor: pointer;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 20px;
 }
+
+
 
 .link:after {
     content: '';
@@ -136,4 +136,55 @@
     width: 100%;
     left: 0;
     background: #fff;
+}
+
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.3em, 0.3em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.3em, 0.3em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.01);
+
+}
+
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.menu {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: -3px -5px 8px 2px black;
+    color: white;
+
+}
+
+.hidden {
+    transition-duration: 0.5s;
+    transform: translateX(120%);
+
+}
+
+.visible {
+    transform: translateX(0px);
+    transition-duration: 0.5s;
+
+}
+
+
+.burger-menu,
+.navbar-right {
+    z-index: 2;
 }

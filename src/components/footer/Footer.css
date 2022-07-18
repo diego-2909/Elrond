@@ -45,3 +45,23 @@
 .underline {
     border-bottom: 1px solid white;
 }
+
+.white {
+    color: white;
+}
+
+.lien-footer {
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+}
+
+.lien-footer:hover {
+    color: white;
+}
+
+.lien-footer:visited {
+    color: white;
+}

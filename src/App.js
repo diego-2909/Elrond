@@ -9,21 +9,22 @@ import Etiquettes from './components/etiquettes/Etiquettes';
 import PriceChange from './components/priceChange/PriceChange';
 import MiniChart from './components/mini-chart/MiniChart';
 import Footer from './components/footer/Footer';
+import About from './pages/About';
+import Accueil from './pages/Accueil';
+import Chart from './pages/Chart';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Presentation />
-      <Etiquettes />
-      <PriceChange />
-      <Cadres />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/EGLD" element={<About />} />
+        <Route path="/Charts" element={<Chart />} />
 
-      <MiniChart />
-      <Footer />
+      </Routes>
 
-
-    </div>
+    </BrowserRouter>
 
   );
 }
