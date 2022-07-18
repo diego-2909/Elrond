@@ -23,6 +23,10 @@ const Navbar = () => {
 
     }
 
+    if (window.innerWidth > 960) {
+        console.log('salut');
+    }
+
 
     return (
         <div className='navbar'>
@@ -52,6 +56,14 @@ const Navbar = () => {
             </div>
 
             <div className={menu_class}>
+                <ul className="categories-navbar-vertical">
+
+                    <li className='li-vertical'> <Link to="/" className=' link lien-navbar' >Accueil</Link></li>
+                    <li className='li-vertical' > <Link to="/EGLD" className=' link lien-navbar' >Qu'est ce que EGLD ?</Link></li>
+                    <li className='li-vertical'> <Link to="/Charts" className='link lien-navbar'>Chart</Link></li>
+                    <li className='li-vertical'><a href='https://elrond.com/' className=' link lien-navbar'>Site Officiel</a></li>
+
+                </ul>
 
             </div>
 

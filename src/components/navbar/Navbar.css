@@ -87,7 +87,11 @@
     margin-top: 3px;
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
 
+}
 
 @media screen and (min-width : 729px) {
 
@@ -159,7 +163,6 @@
 }
 
 .menu {
-    width: 50%;
     height: 100%;
     background-color: rgb(28, 28, 28);
     position: fixed;
@@ -187,4 +190,37 @@
 .burger-menu,
 .navbar-right {
     z-index: 2;
+}
+
+.lien-navbar {
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.lien-navbar:hover {
+    color: white;
+}
+
+.lien-navbar:visited {
+    color: white;
+}
+
+
+
+.categories-navbar-vertical {
+    margin-top: 90px;
+
+
+    text-align: center;
+}
+
+.li-vertical {
+    list-style: none;
+    padding: 10px 0 10px 0;
+
 }
